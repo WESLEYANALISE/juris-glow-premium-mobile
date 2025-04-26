@@ -28,12 +28,12 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
       )} 
       style={{ animationDelay: `${delay}s` }}
     >
-      <div className="bg-juridico-dark-purple/50 p-2 rounded-lg text-juridico-light-purple">
+      <div className="bg-netflix-dark/50 p-2 rounded-lg text-netflix-light">
         {icon}
       </div>
       <div>
         <h3 className="font-semibold text-white mb-1">{title}</h3>
-        <p className="text-gray-300 text-sm">{description}</p>
+        <p className="text-netflix-gray text-sm">{description}</p>
       </div>
     </div>
   );

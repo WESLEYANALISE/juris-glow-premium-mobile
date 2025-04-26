@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -25,6 +24,13 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				netflix: {
+					black: '#141414',
+					red: '#E50914',
+					dark: '#221F1F',
+					gray: '#565656',
+					light: '#B1B1B1',
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -129,7 +135,7 @@ export default {
 				'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'gradient-dark': 'linear-gradient(to bottom, #1A1F2C, #2D1B4F)'
+				'gradient-dark': 'linear-gradient(to bottom, #141414, #221F1F)'
 			}
 		}
 	},

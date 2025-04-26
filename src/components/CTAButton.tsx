@@ -19,12 +19,12 @@ const CTAButton: React.FC<CTAButtonProps> = ({ className }) => {
     <div className={cn("flex flex-col items-center", className)}>
       <button 
         onClick={handleClick}
-        className="bg-gradient-to-r from-juridico-vivid-purple to-juridico-bright-blue text-white font-semibold py-4 px-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 active:scale-95 animate-fade-in-up opacity-0 animate-pulse-glow"
+        className="bg-netflix-red text-white font-semibold py-4 px-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 active:scale-95 animate-fade-in-up opacity-0 animate-pulse-glow"
         style={{ animationDelay: '0.8s' }}
       >
         Adquirir Agora por R$29,99 Vitalício
       </button>
-      <p className="text-gray-400 text-sm mt-3 animate-fade-in-up opacity-0" style={{ animationDelay: '0.9s' }}>
+      <p className="text-netflix-light text-sm mt-3 animate-fade-in-up opacity-0" style={{ animationDelay: '0.9s' }}>
         Disponível na {storeType}
       </p>
     </div>
