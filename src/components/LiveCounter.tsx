@@ -36,13 +36,27 @@ const LiveCounter: React.FC<LiveCounterProps> = ({ className }) => {
   }, []);
 
   return (
-    <div className={cn("glass p-4 rounded-xl space-y-2 animate-fade-in-up opacity-0", className)} style={{ animationDelay: '0.4s' }}>
-      <div className="flex items-center gap-2 text-netflix-light">
-        <Users size={16} className="text-netflix-red" />
-        <span className="text-sm">{viewerCount} pessoas visualizando agora</span>
+    <div 
+      className={cn(
+        "glass p-4 rounded-xl space-y-2 animate-fade-in-up opacity-0",
+        "hover:shadow-[0_0_20px_rgba(229,9,20,0.2)] transition-all duration-300",
+        className
+      )} 
+      style={{ animationDelay: '0.4s' }}
+    >
+      <div className="flex items-center gap-2 text-netflix-light group transition-all duration-300">
+        <Users 
+          size={16} 
+          className="text-netflix-red animate-pulse" 
+        />
+        <span className="text-sm group-hover:text-white transition-colors">
+          {viewerCount} pessoas visualizando agora
+        </span>
       </div>
-      <div className="text-sm">
-        <span className="text-netflix-red font-semibold">{purchaseCount}</span>
+      <div className="text-sm relative overflow-hidden">
+        <span className="text-netflix-red font-semibold animate-bounce inline-block">
+          {purchaseCount}
+        </span>
         <span className="text-netflix-light"> pessoas adquiriram hoje</span>
       </div>
     </div>
