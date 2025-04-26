@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Star } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -10,7 +9,8 @@ interface PremiumButtonProps {
 
 const PremiumButton: React.FC<PremiumButtonProps> = ({ className }) => {
   const handleClick = () => {
-    window.location.href = getAppStoreLink();
+    const link = getAppStoreLink();
+    window.open(link, '_blank'); // Abrir em nova aba
   };
 
   return (
